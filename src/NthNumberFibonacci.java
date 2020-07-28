@@ -15,9 +15,9 @@ public class NthNumberFibonacci {
         } else {
             while (counter < nth) {
                 counter++;
-                if (counter != 1) {// если 1 номер, то не производим вычислений
+                if (counter != 1) {// When 1st number, we don't change i
                     i = a.add(b);
-                    if (counter > 2) {// начиная с 3 номера переписываем предыдущие числа
+                    if (counter > 2) {// starting from 3rd number, rewrite the previous numbers
                         a = b;
                         b = i;
                     }
